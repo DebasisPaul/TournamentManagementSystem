@@ -1,70 +1,43 @@
 # Tournament Tracker
-> 
-> 
 
-## Table of Contents
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
+C# application from start to finish. See a real-world application built from scratch… and learn to do it yourself.
 
+### Featured technologies used include:
+- Interfaces
+- Email
+- SQL
+- Text Files
+- App.config data storage and retrieval
+- OOP
 
-## Technologies Used
-- The tool is written in C # in Visual Studio 2019 on .NET Core 3.1 on Windows 10 - windows form aplications.
-
-## Features
-List the ready features here:
-- Alert emailing to teams
-- sql and text database
-
-## Screenshots
-![dashboard](./TournamentTracker/ss/dashboard.png)
-![tournamentviewer](./TournamentTracker/ss/tournamentviewer.png)
-![createtournament](./TournamentTracker/ss/createtournament.png)
-![createteam](./TournamentTracker/ss/createteam.png)
-![createprize](./TournamentTracker/ss/createprize.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
-## Setup
-To use this on your computer u have to change in App.config: localization to your database or a filepath, if u save data to text file.
-
-Text File
-
-` <appSettings>
-    <add key="filePath" value="your localisation"/>
-  </appSettings> `
-  
-  or
-  
- Database
- 
- ` <connectionStrings>
-    <add name="Tournaments" connectionString="Server= your server name ;Database=Tournaments;Trusted_Connection=True;" providerName="System.Data.SqlClient"/>
-  </connectionStrings> `
-
-if u want switch between a database from text file and sql u have to go to program.cs and set:
- 
- `
-TrackerLibrary.GlobalConfig.InitializeConnections(TrackerLibrary.DatabaseType.Sql); or
-TrackerLibrary.GlobalConfig.InitializeConnections(TrackerLibrary.DatabaseType.TextFile); `
-
- to send emails
- 
- ` <appSettings> <add key="senderEmail" value="yourEmaill"/>
-    <add key="senderDisplayName" value="YourName"/>  </appSettings>  `
-
-## Project Status
-Project is: no longer being worked on.
-
-## Acknowledgements
-- This project was based on [this tutorial](https://www.youtube.com/watch?v=wfWxdh-_k_4).
-
-
-## Room for Improvement
-
-Room for improvement:
-- error handling to all forms
-- option that a winning team with a lower score, for example Golf 
+## Planning
+[Initial Planning](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=1)  
+[Overview Planning](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=2)  
+[Data Design](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=3)  
+[User Interface Design](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=4)  
+[Logic Planning](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=5)  
+## Project Setup
+[Class Library Creation](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=6)  
+[Form Building](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=7)  
+[SQL Database Design](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=8)  
+[Prize Form Wire Up](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=9)  
+[SQL Connection](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=10)  
+[Text Connection](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=11)  
+## Form Development
+[Create Team Form Part 1](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=12)  
+[Create Team Form Part 2](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=13)  
+[Create Team Form Part 3](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=14)  
+[Create Tournament Part 1](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=15)  
+[Create Tournament Part 2](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=16)  
+[Create Tournament Part 3](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=17)  
+[Create Tournament Part 4](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=18)  
+[Create Tournament Part 5](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=19)  
+[Debugging](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=20)  
+[Dashboard Form](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=21)  
+[Tournament Viewer Part 1](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=22)  
+[Tournament Viewer Part 2](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=23)  
+## Refactoring and Additional Features
+[Refactoring](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=24)  
+[Error Handling](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=25)  
+[Emailing Users](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=26)  
+[Wrapping Up](https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi&index=27)  
